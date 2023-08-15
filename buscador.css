@@ -1,0 +1,13 @@
+.buscar{
+    width: 300px;
+    height: 40px;
+    border-radius: 5px;
+    border: solid 2px rgb(128, 182, 252);
+}
+ .btn{
+    width: 70px;
+    height: 40px;
+    background: rgb(128, 182, 252);
+    border-radius: 10px;
+    border: solid  2px rgb(8, 63, 243, 0.993);
+ }
