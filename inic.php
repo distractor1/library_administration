@@ -4,15 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>biblioteca</title>
-    <link rel="stylesheet" href="css/estilos.css">
+   <!--extensiones de la pagina--> 
     <link rel="stylesheet" href="buscador.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
     <style>
+        /* diseño general de la pagina*/
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-
+        /* diseño de la estructura*/
         body {
             justify-content: center;
             align-items: center;
@@ -20,7 +22,7 @@
             background: url(img/prub.jpg);
             background-size: cover;
         }
-
+        /* diseño del menu genral*/
         .menu li a {
             text-decoration: none;
             color: rgb(255, 255, 255);
@@ -37,7 +39,7 @@
         .menu li a:hover {
             background: #8ac0ce;
         }
-
+        /*dieño de la anamcion de apertura*/
         .p10 {
             position: relative;
             width: 200px;
@@ -78,13 +80,19 @@
     </style>
 </head>
 <body>
-    <center><button id="btn" class="btn"> buscar</button>
-        <input id="buscar" class="buscar" placeholder="buscar..">
-    <div id="panel" class="panel"></div></center>
+    <!--buscador de la pagina-->
+    <div class="buscad">
+        <input type="text" placeholder="buscar">
+        <div class="btn">
+            <i class="fa fa-search"></i>
+        </div>
+    </div>
+    <!--barra de menu de la pagina-->
     <ul class="menu">
         <li><a href="#">PRESTAMO</a></li>
         <li><a href="registro.html">REGISTRO NUEVO</a></li>
-    </ul>    
+    </ul> 
+    <!--imagenes de uso para la pagina-->   
     <center style="margin-top: 100px;">
         <br><br><br><br><br></brz><div class="p10">
             <span style="--i:1;"><img src="img/a2.jpeg" alt=""></span>

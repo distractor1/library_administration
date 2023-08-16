@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro Nuevo Libro</title>
     <style>
+        /* este el css del registro general----!!!!!!!
+
+        el body es el disño general del apartado libro nuevo*/
+        
         body {
             font-family: Arial, sans-serif;
             background-color: #cfbbbb;
@@ -12,12 +16,12 @@
             margin: 0;
             padding: 0;
         }
-
+        /* tiutlo de la pagina*/
         h1 {
             text-align: center;
             margin-top: 20px;
         }
-
+        /* diseño del cuadro general*/
         form {
             max-width: 500px;
             margin: 0 auto;
@@ -42,7 +46,7 @@
             border-radius: 4px;
             resize: vertical;
         }
-
+        /*diseño del boton*/
         button[type="submit"] {
             background-color: #007bff;
             color: #fff;
@@ -60,7 +64,8 @@
     </style>
 </head>
 <body>
-   
+
+    <!--estructura de la pagina-->
     <h1>Registro Nuevo Libro</h1>
     <form action="procesar_registro.php" method="post">
         <label for="titulo">Título del Libro:</label>
