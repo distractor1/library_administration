@@ -89,9 +89,9 @@
     </div>
     <!--barra de menu de la pagina-->
     <ul class="menu">
-        <li><a href="#">PRESTAMO</a></li>
-        <li><a href="registro.html">REGISTRO NUEVO</a></li>
-    </ul> 
+        <li><a href="prestamo.php">PRESTAMO</a></li>
+        <li><a href="registro.php">REGISTRO NUEVO</a></li>
+    </ul>
     <!--imagenes de uso para la pagina-->   
     <center style="margin-top: 100px;">
         <br><br><br><br><br></brz><div class="p10">
