@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background: url(img/prub.jpg);
     margin: 0;
     padding: 0;
     display: flex;
@@ -10,8 +10,8 @@ body {
 }
 
 .login-container {
-    background-color: #ffffff;
-    padding: 20px;
+    background-color: #90aec7;
+    padding: 40px;
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
