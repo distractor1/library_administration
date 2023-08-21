@@ -12,7 +12,7 @@ $conn = new mysqli($servername, $username, $password, $dbname);
     $autor= $_POST ['autor'];
     $descripcion= $_POST ['descripcion'];
 
-    $insertarDatos = "INSERT INTO libro VALUES('','$titulo','$descripcion','$autor','','','')";
+    $insertarDatos = "INSERT INTO libro VALUES('','$titulo','$descripcion','$autor')";
     $ejecutarInsertar = mysqli_query($conn,$insertarDatos);
   }
 ?>
