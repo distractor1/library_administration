@@ -6,6 +6,7 @@
     <title>LIBRO</title>
     <link rel="stylesheet" href="buscador.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <link rel="stylesheet" href="tabla.css">
 </head>
 <body>
         <!--buscador de la pagina-->
