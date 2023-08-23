@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="buscador.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
     <link rel="stylesheet" href="tabla.css">
+    
 </head>
 <body>
         <!--buscador de la pagina-->
@@ -31,6 +32,7 @@
         <div class="subtitulos">FECHA</div>
         <div class="subtitulos">DNI ESTUDIANTE</div>
         <div class="subtitulos">NOMBRE DEL ESTUDIANTE</div>
+        <div class="subtitulos"><a href="#"> <button type="button" class="a1">nuevo</button> </a></div>
         <?php  $result = mysqli_query($conex1, $prestamo);
         while($row=mysqli_fetch_assoc($result)) {?>
         <div class="informacion"><?php  echo $row["id_prest"];?></div>
@@ -41,6 +43,7 @@
         <div class="informacion"><?php  echo $row["fecha"];?></div>
         <div class="informacion"><?php  echo $row["dni_est"];?></div>
         <div class="informacion"><?php  echo $row["nombre"];?></div>
+        <div class="informacion"><a href="#"> <button type="button" class="a2 ">eliminar</button> </a></div>
         <?php } ?>
     </div>
 </body>
