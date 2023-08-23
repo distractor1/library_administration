@@ -18,52 +18,30 @@
     </div>
 
     <?php
-    $inc1 = include ("conex_prest.php");
-    if($inc1){
-        $consulta= "SELECT * FROM prestamo";
-        $result=  mysqli_query($conex1,$consulta);
-        if ($result){
-            while($row= $result->fetch_array()){
-                $id_prest = $row['id_prest'];
-                $titulo1 = $row['titulo1'];
-                $autor1= $row['autor1'];
-                $descripcion1 = $row['descripcion1'];
-                $estado = $row['estado'];
-                $fecha = $row['fecha'];
-                $dni_est = $row['dni_est'];
-                $nombre = $row['nombre'];
-                
-                ?> 
-            <div class="tabla">
-                <table>
-                    <thead>
-                        <tr>
-                            <th>ID</th>
-                            <th>TITULO</th>
-                            <th>AUTOR</th>
-                            <th>DESCRIPCION</th>
-                            <th>ESTADO</th>
-                            <th>FECHA</th>
-                            <th>DNI_EST</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><?php echo $row [$id_prest]; ?></td>
-                            <td><?php echo $row [$titulo1]; ?></td>
-                            <td><?php echo $autor1; ?></td>
-                            <td><?php echo $descripcion1; ?></td>
-                            <td><?php echo $estado; ?></td>
-                            <td><?php echo $fecha; ?></td>
-                            <td><?php echo $dni_est; ?></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-                <?php
-            }
-        }
-    }
+        include("conex_prest.php");
+        $prestamo = "SELECT * FROM prestamo";
     ?>
+    <div class="tabla_general">
+
+        <div class="subtitulos">ID</div>
+        <div class="subtitulos">TITULO</div>
+        <div class="subtitulos">AUTOR</div>
+        <div class="subtitulos">DESCRIPCION</div>
+        <div class="subtitulos">ESTADO</div>
+        <div class="subtitulos">FECHA</div>
+        <div class="subtitulos">DNI ESTUDIANTE</div>
+        <div class="subtitulos">NOMBRE DEL ESTUDIANTE</div>
+        <?php  $result = mysqli_query($conex1, $prestamo);
+        while($row=mysqli_fetch_assoc($result)) {?>
+        <div class="informacion"><?php  echo $row["id_prest"];?></div>
+        <div class="informacion"><?php  echo $row["titulo1"];?></div>
+        <div class="informacion"><?php  echo $row["autor1"];?></div>
+        <div class="informacion"><?php  echo $row["descripcion1"];?></div>
+        <div class="informacion"><?php  echo $row["estado"];?></div>
+        <div class="informacion"><?php  echo $row["fecha"];?></div>
+        <div class="informacion"><?php  echo $row["dni_est"];?></div>
+        <div class="informacion"><?php  echo $row["nombre"];?></div>
+        <?php } ?>
+    </div>
 </body>
 </html>
