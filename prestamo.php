@@ -43,7 +43,7 @@
         <div class="informacion"><?php  echo $row["fecha"];?></div>
         <div class="informacion"><?php  echo $row["dni_est"];?></div>
         <div class="informacion"><?php  echo $row["nombre"];?></div>
-        <div class="informacion"><a href="#"> <button type="button" class="a2 ">eliminar</button> </a></div>
+        <div class="informacion"><a href="elimacion.php"><button type="button" class="a2 ">eliminar</button> </a></div>
         <?php } ?>
     </div>
 </body>
