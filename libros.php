@@ -6,7 +6,7 @@
     <title>LIBRO</title>
     <link rel="stylesheet" href="buscador.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
-    <link rel="stylesheet" href="tabla.css">
+    <link rel="stylesheet" href="tab_libr.css">
 </head>
 <body>
         <!--buscador de la pagina-->
@@ -18,41 +18,20 @@
     </div>
 
     <?php
-    $inc = include ("mostrar_dt.php");
-    if($inc){
+        include ("mostrar_dt.php");
         $consulta= "SELECT id,titulo,descripcion,autor FROM libro";
-        $result=  mysqli_query($conex,$consulta);
-        if ($result){
-            while($row= $result->fetch_array()){
-                $id = $row['id'];
-                $titulo = $row['titulo'];
-                $descripcion = $row['descripcion'];
-                $autor = $row['autor'];
-                ?> 
-            <div class="tabla">
-                <table>
-                    <thead>
-                        <tr>
-                            <th>ID</th>
-                            <th>TITULO</th>
-                            <th>AUTOR</th>
-                            <th>DESCRIPCION</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><?php echo $id; ?></td>
-                            <td><?php echo $titulo; ?></td>
-                            <td><?php echo $autor ?></td>
-                            <td><?php echo $descripcion; ?></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-                <?php
-            }
-        }
-    }
-    ?>
+        ?> 
+            <div class="tabla_libros">
+                    <div class="titulos">ID</div>
+                    <div class="titulos">TITULO</div>
+                    <div class="titulos">AUTOR</div>
+                    <div class="titulos">DESCRIPCION</div>
+                    <?php  $resultado= mysqli_query($conex, $consulta);
+                    while($row=mysqli_fetch_assoc($resultado)) {?>
+                    <div class="dato"><?php  echo $row["id"];?></div>
+                    <div class="dato"><?php  echo $row["titulo"];?></div>
+                    <div class="dato"><?php  echo $row["autor"];?></div>
+                    <div class="dato"><?php  echo $row["descripcion"];?></div>
+               <?php } ?>
 </body>
 </html>
