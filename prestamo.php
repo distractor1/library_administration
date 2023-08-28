@@ -4,9 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LIBRO</title>
-    <link rel="stylesheet" href="buscador.css">
+    <link rel="stylesheet" href="css/buscador.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
-    <link rel="stylesheet" href="tabla.css">
+    <link rel="stylesheet" href="css/tabla.css">
+    <style>
+        body{
+            background: url(img/fond.jpg);
+        }
+        </style>
     
 </head>
 <body>
