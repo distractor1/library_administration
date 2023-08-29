@@ -30,7 +30,7 @@ if ($result->num_rows > 0) {
     // Inicio de sesión fallido
     echo "<script>
             alert('Usuario o contraseña incorrectos. vuelva a intentarlo.');
-            window.location.href = 'index.html';
+            window.history.back();
           </script>";
 }
 
