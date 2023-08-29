@@ -8,6 +8,18 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
     <link rel="stylesheet" href="css/tab_libr.css">
     <style>
+         .restablecimiento {
+            margin-top: 10px;
+            padding: 5px 10px;
+            background-color: #f0f0f0;
+            border-radius: 5px;
+            text-decoration: none;
+            display: inline-block;
+            position: absolute;
+            right: 100px;
+            top: 20px;
+
+        }
         body{
             background: url(img/fond.jpg);
         }
@@ -15,17 +27,31 @@
 </head>
 <body>
         <!--buscador de la pagina-->
+            
         <div class="buscad">
-        <input type="text" placeholder="buscar">
-        <div class="btn">
-            <i class="fa fa-search"></i>
-        </div>
-    </div>
+            <form method="GET" action="">
+            <input type="text" name="search1" placeholder="buscar">
+            <div class="btn">
+                <i class="fa fa-search"></i>
+            </div>
+            </form>
+       </div>
+       <?php if (isset($_GET['search1'])) { ?>
+        <a class="restablecimiento" href="?"><button>Mostrar todos</button></a>
+        <?php } ?>
 
-    <?php
-        include ("mostrar_dt.php");
-        $consulta= "SELECT id,titulo,descripcion,autor FROM libro";
-        ?> 
+        <?php
+            include("mostrar_dt.php");
+    
+            $search1 = isset($_GET['search1']) ? $_GET['search1'] : '';
+            if ($search1) {
+                $consulta = "SELECT * FROM libro WHERE 
+                    titulo LIKE '%$search1%'";
+     
+            } else {
+            $consulta = "SELECT * FROM libro";
+            }
+    ?> 
             <div class="tabla_libros">
                     <div class="titulos">ID</div>
                     <div class="titulos">TITULO</div>
