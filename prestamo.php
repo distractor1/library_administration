@@ -21,8 +21,6 @@
             top: 20px;
 
         }
-    </style>
-    <style>
         body{
             background: url(img/fond.jpg);
         }
