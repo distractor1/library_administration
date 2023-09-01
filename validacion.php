@@ -28,10 +28,7 @@ if ($result->num_rows > 0) {
     header("Location: inic.php"); // Redirige al archivo inic.php
 } else {
     // Inicio de sesión fallido
-    echo "<script>
-            alert('Usuario o contraseña incorrectos. vuelva a intentarlo.');
-            window.history.back();
-          </script>";
+    header("Location: index.html?alerta=incorrecto");
 }
 
 // Cerrar la conexión
