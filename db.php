@@ -14,5 +14,13 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 
     $insertarDatos = "INSERT INTO libro VALUES('','$titulo','$descripcion','$autor')";
     $ejecutarInsertar = mysqli_query($conn,$insertarDatos);
+
+    if ($ejecutarInsertar) {
+      //  mostrar una ventana de confirmación
+      echo "<script>alert('Libro registrado con éxito');</script>";
+    } else {
+      //  muestrar una ventana de error
+      echo "<script>alert('Error al registrar el libro');</script>";
+    }
   }
 ?>
