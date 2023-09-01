@@ -25,11 +25,11 @@
     </div>
     <div id="myModal" class="modal">
         <div class="modal-content">
-            <span class="close" onclick="cerrarModal()">&times;</span>
             <p id="mensajeModal"></p>
-            <button onclick="cerrarModal()">Cerrar</button>
+            <button class="notification-button" onclick="cerrarModal()">Cerrar</button>  <!-- se quito la X eh hice que se cambiara el estilo de la ventana -->
         </div>
-        </div>
+    </div>
+    
     <script>
         function mostrarAlerta(){
             var alerta = document.getElementById("myModal");
