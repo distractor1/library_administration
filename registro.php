@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro Nuevo Libro</title>
+    <link rel="stylesheet" href="css/ventana2_lib.css">
     <style>
         /* este el css del registro general----!!!!!!!
 
@@ -81,5 +82,57 @@
 
         <button type="submit" name="registro">Registrar Libro</button>
     </form>
+    <!-- Alerta de éxito -->
+    <div id="alertaExito" class="alert alert-success" style="display: none;">
+        Libro registrado con éxito.
+        <button onclick="cerrarAlerta('alertaExito')">Cerrar</button>
+    </div>
+
+    <!-- Alerta de error -->
+    <div id="alertaError" class="alert alert-error" style="display: none;">
+        Error al registrar el libro.
+        <button onclick="cerrarAlerta('alertaError')">Cerrar</button>
+    </div>
+    <script>
+        function mostrarAlerta() {
+        var parametro = new URLSearchParams(window.location.search);
+        var alerta = parametro.get("alerta");
+
+        if (alerta === "exito") {
+            // Mostrar alerta de éxito
+            var alertaExito = document.getElementById("alertaExito");
+            alertaExito.style.display = "block";
+        } else if (alerta === "error") {
+            // Mostrar alerta de error
+            var alertaError = document.getElementById("alertaError");
+            alertaError.style.display = "block";
+        }
+    }
+
+    function cerrarAlerta(id) {
+        var alerta = document.getElementById(id);
+        alerta.style.display = "none";
+    }
+
+    window.onload = mostrarAlerta; // Mostrar la alerta al cargar la página
+    </script>
+    <script>
+    function mostrarAlerta() {
+        var parametro = new URLSearchParams(window.location.search);
+        var alerta = parametro.get("alerta");
+
+        if (alerta === "exito") {
+            // Mostrar alerta de éxito
+            var alertaExito = document.getElementById("alertaExito");
+            alertaExito.style.display = "block";
+        } else if (alerta === "error") {
+            // Mostrar alerta de error
+            var alertaError = document.getElementById("alertaError");
+            alertaError.style.display = "block";
+        }
+    }
+
+    window.onload = mostrarAlerta; // Mostrar la alerta al cargar la página
+</script>
 </body>
 </html>

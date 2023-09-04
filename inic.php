@@ -82,7 +82,7 @@
     <!--barra de menu de la pagina-->
     <ul class="menu">
         <li><a href="prestamo.php">PRESTAMO</a></li>
-        <li><a href="registro.html">REGISTRO NUEVO</a></li>
+        <li><a href="registro.php">REGISTRO NUEVO</a></li>
         <li><a href="libros.php">LIBRO</a></li>
     </ul>
     <!--imagenes de uso para la pagina-->   
