@@ -21,7 +21,7 @@ $conn = new mysqli($servername, $username, $password, $dbname);
       $_SESSION['mensaje'] = "Libro registrado con éxito";
       echo '<script>window.location.href = "registro.php?alerta=exito";</script>';
     } else {
-      //  muestrar una ventana de error
+      //  muestra una ventana de error
       $_SESSION['mensaje'] = "Error al registrar el libro";
         echo '<script>window.location.href = "registro.php?alerta=error";</script>';
     }

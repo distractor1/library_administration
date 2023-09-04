@@ -78,20 +78,25 @@
         <label for="descripcion">Descripción:</label>
         <textarea id="descripcion" name="descripcion" rows="4" required></textarea>
 
-        <!-- Agrega aquí otros campos relevantes para el registro del libro -->
-
         <button type="submit" name="registro">Registrar Libro</button>
     </form>
+    <!-- Fondo transparente -->
+    <div class="overlay" id="overlay" style="display: none;"></div>
+
     <!-- Alerta de éxito -->
-    <div id="alertaExito" class="alert alert-success" style="display: none;">
-        Libro registrado con éxito.
-        <button onclick="cerrarAlerta('alertaExito')">Cerrar</button>
+    <div id="alertaExito" class="alert-container" style="display: none;">
+        <div class="alert-text">
+            Libro registrado con éxito.
+        </div>
+        <button class="alert-button" onclick="cerrarAlerta('alertaExito')">Aceptar</button>
     </div>
 
     <!-- Alerta de error -->
-    <div id="alertaError" class="alert alert-error" style="display: none;">
-        Error al registrar el libro.
-        <button onclick="cerrarAlerta('alertaError')">Cerrar</button>
+    <div id="alertaError" class="alert-container" style="display: none;">
+    <div class="alert-text">
+            Error al registrar el libro.
+    </div>    
+        <button class="alert-button" onclick="cerrarAlerta('alertaError')">Aceptar</button>
     </div>
     <script>
         function mostrarAlerta() {
@@ -99,19 +104,25 @@
         var alerta = parametro.get("alerta");
 
         if (alerta === "exito") {
-            // Mostrar alerta de éxito
+            // Mostrar alerta de éxito y fondo transparente
             var alertaExito = document.getElementById("alertaExito");
+            var overlay = document.getElementById("overlay");
             alertaExito.style.display = "block";
+            overlay.style.display = "block";
         } else if (alerta === "error") {
-            // Mostrar alerta de error
+            // Mostrar alerta de error y fondo transparente
             var alertaError = document.getElementById("alertaError");
+            var overlay = document.getElementById("overlay");
             alertaError.style.display = "block";
+            overlay.style.display = "block";
         }
     }
 
     function cerrarAlerta(id) {
-        var alerta = document.getElementById(id);
-        alerta.style.display = "none";
+    var alerta = document.getElementById(id);
+    var overlay = document.getElementById("overlay");
+    alerta.style.display = "none";
+    overlay.style.display = "none";
     }
 
     window.onload = mostrarAlerta; // Mostrar la alerta al cargar la página
@@ -131,8 +142,6 @@
             alertaError.style.display = "block";
         }
     }
-
-    window.onload = mostrarAlerta; // Mostrar la alerta al cargar la página
 </script>
 </body>
 </html>
