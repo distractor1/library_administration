@@ -6,28 +6,23 @@
     <title>Registro Nuevo Libro</title>
     <link rel="stylesheet" href="css/ventana2_lib.css">
     <style>
-        /* este el css del registro general----!!!!!!!
-
-        el body es el disño general del apartado libro nuevo*/
-        
         body {
             font-family: Arial, sans-serif;
-            background-color: #cfbbbb;
             background: url(img/fond.jpg);
             margin: 0;
             padding: 0;
+            background-color: #cfbbbb;
         }
-        /* tiutlo de la pagina*/
+        
         h1 {
             text-align: center;
             margin-top: 20px;
         }
-        /* diseño del cuadro general*/
+        
         form {
             max-width: 500px;
             margin: 0 auto;
             padding: 45px;
-   
             border-radius: 5px;
             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
         }
@@ -47,7 +42,7 @@
             border-radius: 4px;
             resize: vertical;
         }
-        /*diseño del boton*/
+
         button[type="submit"] {
             background-color: #007bff;
             color: #fff;
@@ -62,11 +57,43 @@
         button[type="submit"]:hover {
             background-color: #0056b3;
         }
+
+        /* Fondo transparente */
+        .overlay {
+            display: none;
+        }
+
+        /* Alerta de éxito y error */
+        .alert-container {
+            display: none;
+        }
+
+        .alert-text {
+            background-color: white;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .alert-button {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+
+        .alert-button:hover {
+            background-color: #0056b3;
+        }
     </style>
 </head>
 <body>
 
-    <!--estructura de la pagina-->
+    <!-- Estructura de la página -->
     <h1>Registro Nuevo Libro</h1>
     <form action="db.php" method="post">
         <label for="titulo">Título del Libro:</label>
@@ -80,11 +107,11 @@
 
         <button type="submit" name="registro">Registrar Libro</button>
     </form>
-    <!-- Fondo transparente -->
-    <div class="overlay" id="overlay" style="display: none;"></div>
+
+    <div class="overlay" id="overlay"></div>
 
     <!-- Alerta de éxito -->
-    <div id="alertaExito" class="alert-container" style="display: none;">
+    <div id="alertaExito" class="alert-container">
         <div class="alert-text">
             Libro registrado con éxito.
         </div>
@@ -92,56 +119,41 @@
     </div>
 
     <!-- Alerta de error -->
-    <div id="alertaError" class="alert-container" style="display: none;">
-    <div class="alert-text">
+    <div id="alertaError" class="alert-container">
+        <div class="alert-text">
             Error al registrar el libro.
-    </div>    
+        </div>
         <button class="alert-button" onclick="cerrarAlerta('alertaError')">Aceptar</button>
     </div>
+
     <script>
         function mostrarAlerta() {
-        var parametro = new URLSearchParams(window.location.search);
-        var alerta = parametro.get("alerta");
+            var parametro = new URLSearchParams(window.location.search);
+            var alerta = parametro.get("alerta");
 
-        if (alerta === "exito") {
-            // Mostrar alerta de éxito y fondo transparente
-            var alertaExito = document.getElementById("alertaExito");
-            var overlay = document.getElementById("overlay");
-            alertaExito.style.display = "block";
-            overlay.style.display = "block";
-        } else if (alerta === "error") {
-            // Mostrar alerta de error y fondo transparente
-            var alertaError = document.getElementById("alertaError");
-            var overlay = document.getElementById("overlay");
-            alertaError.style.display = "block";
-            overlay.style.display = "block";
+            if (alerta === "exito") {
+                // Mostrar alerta de éxito y fondo transparente
+                var alertaExito = document.getElementById("alertaExito");
+                var overlay = document.getElementById("overlay");
+                alertaExito.style.display = "block";
+                overlay.style.display = "block";
+            } else if (alerta === "error") {
+                // Mostrar alerta de error y fondo transparente
+                var alertaError = document.getElementById("alertaError");
+                var overlay = document.getElementById("overlay");
+                alertaError.style.display = "block";
+                overlay.style.display = "block";
+            }
         }
-    }
 
-    function cerrarAlerta(id) {
-    var alerta = document.getElementById(id);
-    var overlay = document.getElementById("overlay");
-    alerta.style.display = "none";
-    overlay.style.display = "none";
-    }
+        function cerrarAlerta(id) {
+            var alerta = document.getElementById(id);
+            var overlay = document.getElementById("overlay");
+            alerta.style.display = "none";
+            overlay.style.display = "none";
+        }
 
-    window.onload = mostrarAlerta; // Mostrar la alerta al cargar la página
+        window.onload = mostrarAlerta; // Mostrar la alerta al cargar la página
     </script>
-    <script>
-    function mostrarAlerta() {
-        var parametro = new URLSearchParams(window.location.search);
-        var alerta = parametro.get("alerta");
-
-        if (alerta === "exito") {
-            // Mostrar alerta de éxito
-            var alertaExito = document.getElementById("alertaExito");
-            alertaExito.style.display = "block";
-        } else if (alerta === "error") {
-            // Mostrar alerta de error
-            var alertaError = document.getElementById("alertaError");
-            alertaError.style.display = "block";
-        }
-    }
-</script>
 </body>
 </html>
