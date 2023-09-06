@@ -23,7 +23,7 @@
         body{
             background: url(img/fond.jpg);
         }
-        /*estilo de la imagen hessen 1*/
+        /*estilo de la imagen hessen icono*/
         .icono{
             width: 100px;
             height: 130px;

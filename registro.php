@@ -89,10 +89,19 @@
         .alert-button:hover {
             background-color: #0056b3;
         }
+        /*estilo de la imagen hessen icono*/
+        .icono{
+            width: 100px;
+            height: 130px;
+            margin-left: 1400px;
+            float: left;
+        }
     </style>
 </head>
 <body>
-
+    <a href="inic.php">
+        <img class="icono" src="img/hessen icono.png">
+    </a>
     <!-- Estructura de la página -->
     <h1>Registro Nuevo Libro</h1>
     <form action="db.php" method="post">

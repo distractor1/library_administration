@@ -44,10 +44,20 @@
             text-align: center;
             border-radius: 5px;
         }
+        /*estilo de la imagen hessen icono*/
+        .icono{
+            width: 100px;
+            height: 130px;
+            margin-left: 1400px;
+            float: left;
+        }
     </style>
     
 </head>
 <body>
+        <a href="inic.php">
+        <img class="icono" src="img/hessen icono.png">
+        </a>
         <!--buscador de la pagina-->
         <div class="buscad">
          <form method="GET" action="">
