@@ -18,5 +18,15 @@ $conn1 = new mysqli($servername, $username, $password, $dbname);
 
     $insertarDatos1 = "INSERT INTO prestamo VALUES('','$titulo1','$autor1','$descripcion1','$estado','$fecha','$dni_est','$nombre')";
     $ejecutarInsertar1 = mysqli_query($conn1,$insertarDatos1);
+
+    if ($ejecutarInsertar1) {
+      //  mostrar una ventana de confirmación
+      $_SESSION['mensaje'] = "Libro registrado con éxito";
+      echo '<script>window.location.href = "prest_nuev.php?alerta=exito";</script>';
+    } else {
+      //  muestra una ventana de error
+      $_SESSION['mensaje'] = "Error al registrar el libro";
+        echo '<script>window.location.href = "prest_nuev.php?alerta=error";</script>';
+    }
   }
 ?>
