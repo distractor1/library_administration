@@ -23,9 +23,18 @@
         body{
             background: url(img/fond.jpg);
         }
+        .icono{
+            width: 50px;
+            height: 50px;
+        }
         </style>
 </head>
 <body>
+        <a href="inic.php">
+        <img class="icono" src="img/hessen 1.jpeg" 
+        
+        alt="">
+        </a>
         <!--buscador de la pagina-->
         <div class="buscad">
             <form method="GET" action="">
