@@ -23,17 +23,18 @@
         body{
             background: url(img/fond.jpg);
         }
+        /*estilo de la imagen hessen 1*/
         .icono{
-            width: 50px;
-            height: 50px;
+            width: 100px;
+            height: 130px;
+            margin-left: 1400px;
+            float: left;
         }
         </style>
 </head>
 <body>
         <a href="inic.php">
-        <img class="icono" src="img/hessen 1.jpeg" 
-        
-        alt="">
+        <img class="icono" src="img/hessen icono.png">
         </a>
         <!--buscador de la pagina-->
         <div class="buscad">
