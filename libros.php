@@ -63,7 +63,34 @@
                     <div class="dato"><?php  echo $row["titulo"];?></div>
                     <div class="dato"><?php  echo $row["autor"];?></div>
                     <div class="dato"><?php  echo $row["descripcion"];?></div>
-                    <div class="dato"><a href="eliminar_fil_lib.php?id1=<?php echo $row["id"]; ?>"><button type="button" class="lib_a2 ">eliminar</button> </a></div>
-               <?php } ?>      
+                    <div class="dato">
+                    <button type="button" class="lib_a2" onclick="mostrarModal(<?php echo $row["id"]; ?>)">eliminar</button>
+                    </div>
+               <?php } ?> 
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <p>¿Estás seguro de eliminar este libro?</p>
+                    <button onclick="eliminarLibro()">Sí</button>
+                    <button onclick="cerrarModal()">No</button>
+                </div>
+            </div>
+            <script>
+                var idEliminar; // Variable para almacenar el ID a eliminar
+                function mostrarModal(id) {
+                    idEliminar = id; // Almacena el ID a eliminar
+                    var modal = document.getElementById("myModal");
+                    modal.style.display = "block";
+                }
+
+                function cerrarModal() {
+                    var modal = document.getElementById("myModal");
+                    modal.style.display = "none";
+                }
+
+                function eliminarLibro() {
+                    // Redirige al script de eliminación
+                    window.location.href = "eliminar_fil_lib.php?id1=" + idEliminar;
+                }
+            </script>    
 </body>
 </html>
