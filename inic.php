@@ -117,6 +117,21 @@
         background-color: #f44336;
         color: white;
         }
+        .salimos{
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 150px; /* Ancho deseado */
+            height: 50px; /* Altura deseada */
+            font-size: 18px; /* Tamaño del texto */
+            background-color:#f44336;
+            color: white;
+            border: 2px solid transparent; /* Establece un borde inicialmente transparente */
+            transition: border-color 0.3s ease; /* Agrega una transición de animación a la propiedad border-color */
+        }
+        .salimos:hover {
+         border-color: white; /* Cambia el color del borde al pasar el mouse sobre el botón */
+        }
     </style>
 </head>
 <body>
@@ -142,14 +157,14 @@
             <span style="--i:8;"><img src="img/estetica.jpg" alt=""></span>
         </div>
     </center>
-    <button id="salirBtn" style="position: fixed; bottom: 20px; right: 20px;">Salir</button>
+    <button id="salirBtn" class="salimos">Salir</button>
     <script>
             document.getElementById("salirBtn").addEventListener("click", function() {
-            // Crear una div para la alerta
+            // Crea una div para la alerta
             var alertDiv = document.createElement("div");
             alertDiv.className = "confirmation-alert";
 
-            // Crear el contenido de la alerta
+            // Crea el contenido de la alerta
             var confirmationMessage = document.createElement("p");
             confirmationMessage.textContent = "¿Estás seguro de que deseas salir?";
             confirmationMessage.style.fontSize = "18px"; // Ajusta el tamaño del texto si es necesario
