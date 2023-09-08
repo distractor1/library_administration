@@ -25,9 +25,18 @@ $result = $conn->query($sql);
 if ($result->num_rows > 0) {
     // Inicio de sesión exitoso
     $_SESSION['usuario'] = $usuario;
+    // Establece las cabeceras para evitar el almacenamiento en caché
+    header("Cache-Control: no-cache, no-store, must-revalidate");
+    header("Pragma: no-cache");
+    header("Expires: 0");
+    
     header("Location: inic.php"); // Redirige al archivo inic.php
 } else {
     // Inicio de sesión fallido
+    header("Cache-Control: no-cache, no-store, must-revalidate");
+    header("Pragma: no-cache");
+    header("Expires: 0");
+
     header("Location: index.html?alerta=incorrecto");
 }
 
