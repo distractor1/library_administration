@@ -14,8 +14,7 @@ if (isset($_GET["id"])) {
         $success = mysqli_stmt_execute($stmt);
         
         if ($success) {
-            // Redirige de nuevo a la página principal o a donde desees
-            header("Location: prestamo.php");
+            header("Location: prestamo.php"); // Redirige a prestamo.php después de eliminar
             exit();
         } else {
             echo "Error al eliminar el registro.";

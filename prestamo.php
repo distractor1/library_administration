@@ -52,12 +52,10 @@
             float: left;
         }
     </style>
-        <script>
-        // Listen for the back button click event
+    <script>
+        // JavaScript para redirigir al botón Atrás
         window.onpopstate = function(event) {
-            // Check if the previous page is the one you want to redirect to (e.g., "prest_nuev.php")
             if (document.referrer.indexOf("prest_nuev.php") !== -1) {
-                // Redirect to the desired page
                 window.location.href = "prest_nuev.php";
             }
         };
@@ -65,18 +63,19 @@
     
 </head>
 <body>
-        <a href="inic.php">
+<body>
+    <a href="inic.php">
         <img class="icono" src="img/hessen icono.png">
-        </a>
-        <!--buscador de la pagina-->
-        <div class="buscad">
-         <form method="GET" action="">
-        <input type="text" name="search" placeholder="buscar">
-        <div class="btn">
-        <i class="fa fa-search"></i>
-        </div>
-       </form>
-       </div>
+    </a>
+    <!-- Buscador de la página -->
+    <div class="buscad">
+        <form method="GET" action="">
+            <input type="text" name="search" placeholder="buscar">
+            <div class="btn">
+                <i class="fa fa-search"></i>
+            </div>
+        </form>
+    </div>
        <?php if (isset($_GET['search'])) { ?>
         <a class="mostrar-todos" href="?"><button>Mostrar todos</button></a>
         <?php } ?>
@@ -121,32 +120,31 @@
         <button type="button" class="a2" onclick="mostrarModal(<?php echo $row["id_prest"]; ?>)">eliminar</button>
         </div>
     <?php } ?>
-    </div>
     <div id="myModal" class="modal">
-                <div class="modal-content">
-                    <p>¿Estás seguro de eliminar este libro?</p>
-                    <button onclick="eliminarLibro1()">Sí</button>
-                    <button onclick="cerrarModal1()">No</button>
-                </div>
-            </div>
+        <div class="modal-content">
+            <p>¿Estás seguro de eliminar este libro?</p>
+            <button onclick="eliminarLibro1()">Sí</button>
+            <button onclick="cerrarModal1()">No</button>
+        </div>
+    </div>
     <script>
         var idEliminar1; // Variable para almacenar el ID a eliminar
-            function mostrarModal(id_prest) {
+
+        function mostrarModal(id_prest) {
             idEliminar1 = id_prest; // Almacena el ID a eliminar
             var modal = document.getElementById("myModal");
             modal.style.display = "block";
-            }
+        }
 
-            function cerrarModal1() {
-                var modal = document.getElementById("myModal");
-                modal.style.display = "none";
-            }
+        function cerrarModal1() {
+            var modal = document.getElementById("myModal");
+            modal.style.display = "none";
+        }
 
-            function eliminarLibro1() {
-            // Redirige al script de eliminación
+        function eliminarLibro1() {
             window.location.href = "eliminacion.php?id=" + idEliminar1;
-            }
-    </script>    
+        }
+    </script>
 
 </body>
 </html>
