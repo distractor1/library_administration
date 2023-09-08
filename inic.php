@@ -82,6 +82,41 @@
         top: 20px;
         right: 20px;
         }
+        /* Estilos para centrar la alerta y hacerla más grande */
+        .confirmation-alert {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: white;
+        width: 400px; /* Ancho deseado */
+        height: 100px; /* Altura deseada */
+        padding: 20px;
+        border: 1px solid #ccc;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+        text-align: center;
+        border-radius: 10px;
+        }
+
+        /* Estilos para los botones */
+        .confirmation-alert button {
+            padding: 10px 20px;
+            margin: 10px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            border-radius: 4px;
+        }
+
+        .confirmation-alert button.accept-button {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        .confirmation-alert button.cancel-button {
+        background-color: #f44336;
+        color: white;
+        }
     </style>
 </head>
 <body>
@@ -109,11 +144,40 @@
     </center>
     <button id="salirBtn" style="position: fixed; bottom: 20px; right: 20px;">Salir</button>
     <script>
-    document.getElementById("salirBtn").addEventListener("click", function() {
-        if (confirm("¿Estás seguro de que deseas salir?")) {
-            window.location.href = "index.html"; // Reemplaza "otra_pagina.html" con la URL de la página a la que deseas redirigir.
-        }
-    });
+            document.getElementById("salirBtn").addEventListener("click", function() {
+            // Crear una div para la alerta
+            var alertDiv = document.createElement("div");
+            alertDiv.className = "confirmation-alert";
+
+            // Crear el contenido de la alerta
+            var confirmationMessage = document.createElement("p");
+            confirmationMessage.textContent = "¿Estás seguro de que deseas salir?";
+            confirmationMessage.style.fontSize = "18px"; // Ajusta el tamaño del texto si es necesario
+
+            // Crea botones para confirmar o cancelar
+            var confirmButton = document.createElement("button");
+            confirmButton.textContent = "Aceptar";
+            confirmButton.className = "accept-button"; 
+            confirmButton.addEventListener("click", function() {
+                window.location.href = "index.html"; 
+                alertDiv.remove(); // Eliminar la alerta después de la redirección
+            });
+
+            var cancelButton = document.createElement("button");
+            cancelButton.textContent = "Cancelar";
+            cancelButton.className = "cancel-button"; // Asigna la clase cancel-button
+            cancelButton.addEventListener("click", function() {
+                alertDiv.remove(); // Elimina la alerta si se hace clic en Cancelar
+            });
+
+            // Agrega elementos a la div de la alerta
+            alertDiv.appendChild(confirmationMessage);
+            alertDiv.appendChild(confirmButton);
+            alertDiv.appendChild(cancelButton);
+
+            // Agrega el div de la alerta al cuerpo del documento
+            document.body.appendChild(alertDiv);
+        });
     </script>
 </body>
 </html>
