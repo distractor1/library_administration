@@ -21,6 +21,25 @@
             border-radius: 5px;
             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
         }
+
+        #fecha      {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        #dni_est     {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 16px;
+        margin-bottom: 10px;
+        }
+
         </style>
 </head>
 <body>
@@ -40,10 +59,10 @@
         <input type="text" id="estado" name="estado" required>
 
         <label for="fecha">Fecha:</label>
-        <input type="text" id="fecha" name="fecha" required>
+        <input type="date" id="fecha" name="fecha" required>
 
         <label for="dni_est">DNI del estudiante:</label>
-        <input type="text" id="dni_est" name="dni_est" required>
+        <input type="number" id="dni_est" name="dni_est" required>
 
         <label for="nombre">Nombre del estudiante:</label>
         <input type="text" id="nombre" name="nombre" required>
@@ -74,20 +93,27 @@
             var parametro = new URLSearchParams(window.location.search);
             var alerta = parametro.get("alerta");
 
-            if (alerta === "exito") {
-                // Mostrar alerta de éxito y fondo transparente
-                var alertaExito = document.getElementById("alertaExito");
-                var overlay1 = document.getElementById("overlay1");
-                alertaExito.style.display = "block";
-                overlay1.style.display = "block";
-            } else if (alerta === "error") {
-                // Mostrar alerta de error y fondo transparente
-                var alertaError = document.getElementById("alertaError");
-                var overlay1 = document.getElementById("overlay1");
-                alertaError.style.display = "block";
-                overlay1.style.display = "block";
-            }
-        }
+function mostrarAlerta() {
+    var parametro = new URLSearchParams(window.location.search);
+    var alerta = parametro.get("alerta");
+
+    if (alerta === "exito") {
+        // Mostrar alerta de éxito y fondo transparente
+        var alertaExito = document.getElementById("alertaExito");
+        var overlay1 = document.getElementById("overlay1");
+        alertaExito.style.display = "block";
+        overlay1.style.display = "block";
+    } else if (alerta === "error") {
+        // Mostrar alerta de error y fondo transparente
+        var alertaError = document.getElementById("alertaError");
+        var overlay1 = document.getElementById("overlay1");
+        alertaError.style.display = "block";
+        overlay1.style.display = "block";
+    }
+}
+
+// Call the mostrarAlerta function to display alerts only when necessary
+mostrarAlerta();
 
         function cerrarAlerta(id) {
             var alerta = document.getElementById(id);
