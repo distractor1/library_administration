@@ -85,23 +85,7 @@
                     <button onclick="cerrarModal()">No</button>
                 </div>
             </div>
-            <script>
-                var idEliminar; // Variable para almacenar el ID a eliminar
-                function mostrarModal(id) {
-                    idEliminar = id; // Almacena el ID a eliminar
-                    var modal = document.getElementById("myModal");
-                    modal.style.display = "block";
-                }
-
-                function cerrarModal() {
-                    var modal = document.getElementById("myModal");
-                    modal.style.display = "none";
-                }
-
-                function eliminarLibro() {
-                    // Redirige al script de eliminación
-                    window.location.href = "eliminar_fil_lib.php?id1=" + idEliminar;
-                }
+            <script src="js/alert_elim_lib1.js">
             </script>    
 </body>
 </html>
