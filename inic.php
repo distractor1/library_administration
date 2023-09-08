@@ -75,10 +75,19 @@
             height: 100%;
             object-fit: cover;
         }
+        .icono {
+        width: 100px;
+        height: 130px;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        }
     </style>
 </head>
 <body>
-  
+    <a href="">
+        <img class="icono" src="img/hessen icono.png">
+    </a>
     <!--barra de menu de la pagina-->
     <ul class="menu">
         <li><a href="prestamo.php">PRESTAMO</a></li>

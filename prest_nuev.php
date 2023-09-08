@@ -39,9 +39,19 @@
             font-size: 16px;
             margin-bottom: 10px;
         }
+        .icono{
+            width: 100px;
+            height: 130px;
+            margin-left: 20px;
+            margin-top: 0px; /*cambiar valor para ajustar la pocicion*/
+            float: left;
+        }
     </style>
 </head>
 <body>
+    <a href="inic.php">
+        <img class="icono" src="img/hessen icono.png">
+    </a>
     <!--estructura de la pagina-->
     <h1>NUEVO PRESTAMO</h1>
     <form action="nuev_prest.php" method="post">

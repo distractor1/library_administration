@@ -48,8 +48,8 @@
         .icono{
             width: 100px;
             height: 130px;
-            margin-left: 20px;
-            margin-top: -55px; /*cambiar valor para ajustar la pocicion*/
+            margin-left: 12px;
+            margin-top: -90px; /*cambiar valor para ajustar la pocicion*/
             float: left;
         }
     </style>
