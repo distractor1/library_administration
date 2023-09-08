@@ -107,5 +107,13 @@
             <span style="--i:8;"><img src="img/estetica.jpg" alt=""></span>
         </div>
     </center>
+    <button id="salirBtn" style="position: fixed; bottom: 20px; right: 20px;">Salir</button>
+    <script>
+    document.getElementById("salirBtn").addEventListener("click", function() {
+        if (confirm("¿Estás seguro de que deseas salir?")) {
+            window.location.href = "index.html"; // Reemplaza "otra_pagina.html" con la URL de la página a la que deseas redirigir.
+        }
+    });
+    </script>
 </body>
 </html>
