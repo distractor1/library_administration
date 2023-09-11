@@ -4,16 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio de sesión</title>
-    <link rel="stylesheet" href="css/styles.css"> <!-- Agrega tu archivo CSS aquí -->
+    <link rel="stylesheet" href="css/styles.css"> 
     <link rel="stylesheet" href="css/ventana1.css">
     <style>
         body{
             background: url(img/prub.jpg);
         }
-        </style>
+        .login-container img {
+        width: 90px; /* Ajusta el ancho de la imagen según tus necesidades */
+        height: 90px; /* Ajusta el alto de la imagen según tus necesidades */
+        margin-bottom: 5px; /* Agrega un margen inferior para separar la imagen del encabezado */
+        }
+    </style>
 </head>
 <body>
     <div class="login-container">
+        <img src="img/hessen icono.png" alt="Icono de inicio de sesión">
         <h1>INICIO DE SESIÓN</h1>
         <form action="validacion.php" method="post">
             <label for="usuario">Usuario:</label>
