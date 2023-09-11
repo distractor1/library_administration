@@ -7,15 +7,20 @@ body {
     align-items: center;
     height: 100vh;
 }
-
+/* estilo del conainer login*/
 .login-container {
-    background-color: #90aec7;
+    background-color: rgba(87, 112, 150, 0.7);
     padding: 40px;
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
     max-width: 400px;
-}
+    border: 2px solid transparent;
+    transition: border 0.3s ease-in-out;
+    }
+.login-container:hover {
+        border: 2px solid #fff; /* Cambia el borde a blanco al pasar el mouse */
+    }
 
 h1 {
     margin-bottom: 20px;

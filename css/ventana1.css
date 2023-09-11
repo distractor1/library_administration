@@ -33,4 +33,26 @@
 /* Estilo para el botón de cierre al pasar el ratón sobre él */
 .close:hover {
     color: #ff0000; /* Cambia el color del botón al pasar el ratón */
-} 
+}
+
+/* Estilo para los elementos de párrafo dentro del modal */
+p {
+    font-size: 18px; /* Tamaño de fuente */
+    margin-bottom: 15px; /* Margen inferior */
+}
+
+/* Estilo para los botones dentro del modal */
+.notification-button {
+    background-color: #007bff; /* Fondo del botón */
+    color: #fff; /* Color del texto del botón */
+    border: none; /* Sin bordes */
+    padding: 10px 20px; /* Espaciado interior */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar el ratón */
+    font-size: 16px; /* Tamaño de fuente */
+}
+
+/* Estilo para los botones al pasar el ratón sobre ellos */
+.notification-button:hover {
+    background-color: #02468f; /* Cambia el fondo al pasar el ratón */
+}
