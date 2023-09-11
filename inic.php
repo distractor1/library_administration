@@ -36,7 +36,20 @@
         </div>
     </center>
     <button id="salirBtn" class="salimos">Salir</button>
-    <script src="js/alert_salir_pag.js">
+    <script>
+        // Bloquear el retroceso del navegador
+        history.pushState(null, null, location.href);
+        window.onpopstate = function () {
+            history.go(1);
+        };
+
+        // Agregar un evento click al botón "Salir" para permitir la salida
+        document.getElementById("salirBtn").addEventListener("click", function () {
+            var confirmacion = confirm("¿Estás seguro de que deseas salir de la página?");
+            if (confirmacion) {
+                window.location.href = "index.html";
+            }
+        });
     </script>
 </body>
 </html>
