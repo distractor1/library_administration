@@ -55,3 +55,9 @@ input[type="submit"] {
 input[type="submit"]:hover {
     background-color: #444;
 }
+/* estilo a la imagen icono de login*/
+.login-container img {
+    width: 90px; /* Ajusta el ancho de la imagen según tus necesidades */
+    height: 90px; /* Ajusta el alto de la imagen según tus necesidades */
+    margin-bottom: 5px; /* Agrega un margen inferior para separar la imagen del encabezado */
+    }

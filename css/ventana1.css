@@ -5,7 +5,7 @@
     top: 50%; /* Centrado verticalmente en la ventana */
     left: 50%; /* Centrado horizontalmente en la ventana */
     transform: translate(-50%, -50%); /* Ajusta la posición al centro exacto */
-    background-color: #fff4d7; /* Fondo del modal */
+    background-color: white; /* Fondo del modal */
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Sombra */
     border-radius: 5px; /* Bordes redondeados */
     z-index: 999; /* Capa superior, encima de otros elementos */
