@@ -43,6 +43,8 @@ button[type="submit"] {
     cursor: pointer;
     font-size: 16px;
     margin-top: 20px;
+    margin: 30px auto; /* Centrar el botón horizontalmente */
+    display: block;
 }
 
 button[type="submit"]:hover {
@@ -87,4 +89,9 @@ button[type="submit"]:hover {
     margin-left: 20px;
     margin-top: 0px; /*cambiar valor para ajustar la pocicion*/
     float: left;
+}
+/* diseño de select */
+select#descripcion {
+    width: 200px; /* Ajusta el ancho según tus preferencias */
+    height: 37px;
 }

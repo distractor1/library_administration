@@ -60,12 +60,18 @@
 
         <label for="autor1">Autor:</label>
         <input type="text" id="autor1" name="autor1" required>
+        
+        <label for="descripcion">Descripción:</label>
+    <select id="descripcion" name="descripcion" required>
+        <option value="opcion1">Gabinete 1</option>
+        <option value="opcion2">Gabinete 2</option>
+        <option value="opcion3">Gabinete 3</option>
+        <option value="opcion4">Gabinete 4</option>
+        <option value="opcion5">Gabinete 5</option>
+    </select>
 
-        <label for="descripcion1">Descripción:</label>
-        <textarea id="descripcion1" name="descripcion1" rows="8" required></textarea>
-
-        <label for="estado">Estado:</label>
-        <input type="text" id="estado" name="estado" required>
+    <label for="estado">Estado:</label>
+    <input type="text" id="estado" name="estado" required>
 
         <label for="fecha">Fecha:</label>
         <input type="date" id="fecha" name="fecha" required>

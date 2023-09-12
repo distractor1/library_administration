@@ -24,11 +24,21 @@
 
         <label for="autor">Autor:</label>
         <input type="text" id="autor" name="autor" required>
-
         <label for="descripcion">Descripción:</label>
-        <textarea id="descripcion" name="descripcion" rows="4" required></textarea>
+        <select id="descripcion" name="descripcion" required>
+        <option value="opcion1">Gabinete 1</option>
+        <option value="opcion2">Gabinete 2</option>
+        <option value="opcion3">Gabinete 3</option>
+        <option value="opcion3">Gabinete 4</option>
+        <option value="opcion3">Gabinete 5</option>
+    <!-- Agrega más opciones según sea necesario -->
+    </select>
 
+        <br>
         <button type="submit" name="registro">Registrar Libro</button>
+
+        
+        
     </form>
 
     <div class="overlay" id="overlay"></div>
