@@ -10,42 +10,6 @@
         body {
             background: url(img/fond.jpg);
         }
-        /* Alerta de éxito y error */
-        .alert-container {
-            display: none;
-        }
-
-        .alert-text {
-            background-color: white;
-            padding: 10px;
-            border-radius: 5px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-        }
-
-        #fecha {
-            width: 100%;
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            font-size: 16px;
-            margin-bottom: 10px;
-        }
-
-        #dni_est {
-            width: 100%;
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            font-size: 16px;
-            margin-bottom: 10px;
-        }
-        .icono{
-            width: 100px;
-            height: 130px;
-            margin-left: 20px;
-            margin-top: 0px; /*cambiar valor para ajustar la pocicion*/
-            float: left;
-        }
     </style>
 </head>
 <body>
