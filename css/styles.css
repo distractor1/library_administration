@@ -7,30 +7,43 @@ body {
     align-items: center;
     height: 100vh;
 }
+.login-container p {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+    padding: 10px; 
+    background-color: rgb(226, 235, 240,0.0); 
+    text-align: center; 
+    font-style: italic;
+    font-size: 10px;
+    color: white;
+}
 /* estilo del conainer login*/
 .login-container {
-    background-color: rgba(87, 112, 150, 0.5);
+    background-color: rgba(87, 112, 150, 0.3);
     padding: 40px;
     border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 10px rgb(255, 255, 255);
     text-align: center;
     max-width: 400px;
     border: 2px solid transparent;
-    transition: border 0.3s ease-in-out;
+    transition: border-color 0.3s ease-in-out;
     }
 .login-container:hover {
-        border: 2px solid #fff; /* Cambia el borde a blanco al pasar el mouse */
+        border: 2px solid #ffffff; /* Cambia el borde a blanco al pasar el mouse */
     }
 
 h1 {
     margin-bottom: 20px;
-    color: #333;
+    color: #fffefe;
 }
 
 label {
     display: block;
     margin-bottom: 5px;
-    color: #333;
+    color: #fffcfc;
     font-weight: bold;
 }
 
