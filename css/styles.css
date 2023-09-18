@@ -74,3 +74,30 @@ input[type="submit"]:hover {
     height: 90px; /* Ajusta el alto de la imagen según tus necesidades */
     margin-bottom: 5px; /* Agrega un margen inferior para separar la imagen del encabezado */
     }
+
+    @media screen and (max-width: 768px) {
+        .login-container {
+            padding: 20px; /* Reduce el espacio interior del contenedor */
+            max-width: 100%; /* Hace que el contenedor ocupe todo el ancho disponible */
+        }
+        .login-container img {
+            width: 60px; /* Reduce el tamaño de la imagen */
+            height: 60px;
+        }
+        h1 {
+            font-size: 24px; /* Reduce el tamaño del encabezado */
+        }
+        label {
+            font-size: 14px; /* Reduce el tamaño de las etiquetas */
+        }
+        input[type="text"],
+        input[type="password"] {
+            font-size: 14px; /* Reduce el tamaño de los campos de entrada */
+        }
+        input[type="submit"] {
+            padding: 8px 16px; /* Reduce el espacio de los botones */
+        }
+        .login-container p {
+            font-size: 8px; /* Reduce el tamaño del texto inferior */
+        }
+    }
