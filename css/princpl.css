@@ -123,3 +123,27 @@ color: white;
 .salimos:hover {
  border-color: white; /* Cambia el color del borde al pasar el mouse sobre el botón */
 }
+
+@media screen and (max-width: 768px) {
+    .menu li {
+        display: block;
+        text-align: left;
+    }
+
+    .menu li a {
+        padding: 15px; /* Reduce el espaciado de los elementos del menú */
+    }
+
+    .p10 {
+        width: 150px; /* Reduce el tamaño del contenedor de imágenes */
+        height: 150px;
+    }
+
+    .salimos {
+        bottom: 10px;
+        right: 10px;
+        width: 120px; /* Ajusta el tamaño del botón */
+        height: 40px;
+        font-size: 14px; /* Ajusta el tamaño del texto del botón */
+    }
+}
