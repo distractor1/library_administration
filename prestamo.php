@@ -100,11 +100,11 @@
         <div class="subtitulos">ID</div>
         <div class="subtitulos">TITULO</div>
         <div class="subtitulos">AUTOR</div>
-        <div class="subtitulos">DESCRIPCION</div>
+        <div class="subtitulos">SECCION</div>
         <div class="subtitulos">ESTADO</div>
         <div class="subtitulos">FECHA</div>
-        <div class="subtitulos">DNI ESTUDIANTE</div>
-        <div class="subtitulos">NOMBRE DEL ESTUDIANTE</div>
+        <div class="subtitulos">DNI </div>
+        <div class="subtitulos">ESTUDIANTE</div>
         <div class="subtitulos"><a href="prest_nuev.php"> <button type="button" class="a1">nuevo</button> </a></div>
         <?php 
         $result = mysqli_query($conex1, $prestamo);

@@ -25,7 +25,7 @@
         <label for="autor1">Autor:</label>
         <input type="text" id="autor1" name="autor1" required>
 
-        <label for="descripcion1">Descripción:</label>
+        <label for="descripcion1">SECCION:</label>
         <select id="descripcion1" name="descripcion1" required>
         <option value="opcion1">Gabinete 1</option>
         <option value="opcion2">Gabinete 2</option>

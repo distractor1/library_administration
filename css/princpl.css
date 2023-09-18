@@ -67,11 +67,11 @@ body {
     object-fit: cover;
 }
 .icono {
-width: 100px;
-height: 130px;
-position: absolute;
-top: 20px;
-right: 20px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 6rem; /* Tamaño deseado */
+    height: 8rem; /* Tamaño deseado */
 }
 /* Estilos para centrar la alerta y hacerla más grande */
 .confirmation-alert {
@@ -132,6 +132,7 @@ color: white;
 
     .menu li a {
         padding: 15px; /* Reduce el espaciado de los elementos del menú */
+    
     }
 
     .p10 {

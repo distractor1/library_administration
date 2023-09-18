@@ -66,7 +66,7 @@
                     <div class="titulos">ID</div>
                     <div class="titulos">TITULO</div>
                     <div class="titulos">AUTOR</div>
-                    <div class="titulos">DESCRIPCION</div>
+                    <div class="titulos">SECCION</div>
                     <div class="titulos">ELIMINAR</div>
                     <?php  $resultado= mysqli_query($conex, $consulta);
                     while($row=mysqli_fetch_assoc($resultado)) {?>
