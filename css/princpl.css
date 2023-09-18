@@ -125,14 +125,14 @@ color: white;
 }
 
 @media screen and (max-width: 768px) {
-    .menu li {
-        display: block;
-        text-align: left;
+    .menu a {
+        padding: 10px 15px; /* Añade relleno al enlace */
+        border-radius: 5px; /* Añade bordes redondeados */
+        transition: background-color 0.3s ease; /* Agrega una transición para suavizar el cambio de color de fondo */
     }
 
-    .menu li a {
-        padding: 15px; /* Reduce el espaciado de los elementos del menú */
-    
+    .menu li.active {
+        background-color: #8ac0ce; /* Color de fondo cuando se selecciona */
     }
 
     .p10 {
