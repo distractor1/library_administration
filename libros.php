@@ -31,6 +31,17 @@
             margin-top: -90px; /*cambiar valor para ajustar la pocicion*/
             float: left;
         }
+
+         /* Estilo para la clase "lib_a2" */
+        .lib_a2 {
+            background-color: #f57573; /* Cambia el color de fondo a tu preferencia */
+            color: white; /* Cambia el color del texto a tu preferencia */
+            padding: 5px 10px;
+            border-radius: 5px;
+            text-decoration: none;
+            border: none;
+            cursor: pointer;
+        }
         </style>
 </head>
 <body>
