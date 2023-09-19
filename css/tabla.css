@@ -10,16 +10,3 @@ body {
     grid-auto-rows: 50px;
 }
 
-.subtitulos, .informacion {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid #000000; /* Agrega bordes a las celdas */
-    padding: 4px; /* Añade un poco de espacio dentro de las celdas */
-}
-
-.subtitulos {
-    font-weight: bold;
-    font-size: 1.5em;
-    background-color: hsl(209, 82%, 73%); /* Cambia el color de fondo de los títulos de columna */
-}

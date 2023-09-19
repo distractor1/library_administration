@@ -42,6 +42,20 @@
             border: none;
             cursor: pointer;
         }
+                .titulos, .dato {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #000000; /* Agrega bordes a las celdas */
+            padding: 4px; /* Añade un poco de espacio dentro de las celdas */
+        }
+
+        .titulos {
+            font-weight: bold;
+            font-size: 1.5em;
+            background-color: hsl(209, 93%, 53%); /* Cambia el color de fondo de los títulos de columna */
+        }
+
         </style>
 </head>
 <body>

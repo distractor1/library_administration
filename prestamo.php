@@ -53,9 +53,9 @@
             float: left;
         }
         .a1 {
-            background-color: rgb(72, 163, 224); /* Cambia el color de fondo a tu preferencia */
-            color: #ffffff; /* Cambia el color del texto a tu preferencia */
-            padding: 5px 10px;
+            background-color:white; /* Cambia el color de fondo a tu preferencia */
+            color: black; /* Cambia el color del texto a tu preferencia */
+            padding: 10px 10px;
             border-radius: 5px;
             text-decoration: none;
             border: none;
@@ -72,6 +72,21 @@
             border: none;
             cursor: pointer;
         }
+
+        .subtitulos, .informacion {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #000000; /* Agrega bordes a las celdas */
+            padding: 4px; /* Añade un poco de espacio dentro de las celdas */
+        }
+
+        .subtitulos {
+            font-weight: bold;
+            font-size: 1.5em;
+            background-color: hsl(209, 93%, 53%); /* Cambia el color de fondo de los títulos de columna */
+        }
+
        
     </style>
     <script>
