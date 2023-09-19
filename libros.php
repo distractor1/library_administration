@@ -42,7 +42,7 @@
             border: none;
             cursor: pointer;
         }
-                .titulos, .dato {
+            .titulos, .dato {
             display: flex;
             justify-content: center;
             align-items: center;
