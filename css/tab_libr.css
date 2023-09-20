@@ -1,29 +1,38 @@
-body{
+body {
     font-family: monospace;
+    background: url(img/fond.jpg);
 }
 
-.tabla_libros{
-    width: 50%;
-   
-    margin: 110px auto;
+.tabla_libros {
+    width: 100%;
+    max-width: 800px;
+    margin: 120px auto; /* Auto en los lados izquierdo y derecho centra horizontalmente */
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-auto-rows: 50px;
+    grid-auto-rows: auto;
+    grid-gap: 10px;
 }
+
+
 .titulos, .dato {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 10px; /* Aumentado el espacio interno para mejorar la legibilidad en pantallas pequeñas */
+    text-align: center; /* Alineación de texto centrada */
 }
-.titulos{
+
+.titulos {
     font-weight: bold;
-    font-size: 1.5em;
+    font-size: 1.2em; /* Reducido el tamaño del título para mejorar la legibilidad en pantallas pequeñas */
+    background-color: hsl(209, 93%, 53%);
 }
+
 .dato {
-    padding: 1px;
-    font-size: 15px;
+    font-size: 1em; /* Tamaño de fuente base para datos */
 }
-/* estilo d ela modal (ventana de advertencia)*/
+
+/* Estilo de la modal (ventana de advertencia) */
 .modal {
     display: none;
     position: fixed;
@@ -37,8 +46,9 @@ body{
 
 .modal-content {
     background-color: #fff;
-    width: 300px;
-    margin: 100px auto;
+    width: 80%; /* Cambiado a un porcentaje para hacerlo más adaptable */
+    max-width: 400px; /* Limitado el ancho máximo para evitar que sea demasiado grande en pantallas grandes */
+    margin: 20% auto; /* Aumentado el margen para centrarlo verticalmente en pantallas pequeñas */
     padding: 20px;
     text-align: center;
     border-radius: 5px;

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -59,58 +59,63 @@
         </style>
 </head>
 <body>
-        <a href="inic.php">
+    <a href="inic.php">
         <img class="icono" src="img/hessen icono.png">
-        </a>
-        <!--buscador de la pagina-->
-        <div class="buscad">
-            <form method="GET" action="">
-            <input type="text" name="search1" placeholder="buscar">
+    </a>
+    <!-- Buscador de la página -->
+    <div class="buscad">
+        <form method="GET" action="">
+            <input type="text" name="search1" placeholder="Buscar">
             <div class="btn">
                 <i class="fa fa-search"></i>
             </div>
-            </form>
-       </div>
-       <?php if (isset($_GET['search1'])) { ?>
-        <a class="restablecimiento" href="?"><button>Mostrar todos</button></a>
-        <?php } ?>
-
-        <?php
-            include("mostrar_dt.php");
+        </form>
+    </div>
     
-            $search1 = isset($_GET['search1']) ? $_GET['search1'] : '';
-            if ($search1) {
-                $consulta = "SELECT * FROM libro WHERE 
-                    titulo LIKE '%$search1%'";
-     
-            } else {
+    <?php if (isset($_GET['search1'])) { ?>
+        <a class="restablecimiento" href="?"><button>Mostrar todos</button></a>
+    <?php } ?>
+
+    <?php
+        include("mostrar_dt.php");
+
+        $search1 = isset($_GET['search1']) ? $_GET['search1'] : '';
+        if ($search1) {
+            $consulta = "SELECT * FROM libro WHERE 
+                titulo LIKE '%$search1%'";
+        } else {
             $consulta = "SELECT * FROM libro";
-            }
-        ?> 
-            <div class="tabla_libros">
-                    <div class="titulos">ID</div>
-                    <div class="titulos">TITULO</div>
-                    <div class="titulos">AUTOR</div>
-                    <div class="titulos">SECCION</div>
-                    <div class="titulos">ELIMINAR</div>
-                    <?php  $resultado= mysqli_query($conex, $consulta);
-                    while($row=mysqli_fetch_assoc($resultado)) {?>
-                    <div class="dato "><?php  echo $row["id"];?></div>
-                    <div class="dato"><?php  echo $row["titulo"];?></div>
-                    <div class="dato"><?php  echo $row["autor"];?></div>
-                    <div class="dato"><?php  echo $row["descripcion"];?></div>
-                    <div class="dato">
-                    <button type="button" class="lib_a2" onclick="mostrarModal(<?php echo $row["id"]; ?>)">eliminar</button>
-                    </div>
-               <?php } ?> 
-            <div id="myModal" class="modal">
-                <div class="modal-content">
-                    <p>¿Estás seguro de eliminar este libro?</p>
-                    <button onclick="eliminarLibro()">Sí</button>
-                    <button onclick="cerrarModal()">No</button>
-                </div>
+        }
+    ?> 
+    
+    <div class="tabla_libros">
+        <div class="titulos">ID</div>
+        <div class="titulos">TITULO</div>
+        <div class="titulos">AUTOR</div>
+        <div class="titulos">SECCION</div>
+        <div class="titulos">ELIMINAR</div>
+        <?php  
+            $resultado= mysqli_query($conex, $consulta);
+            while($row=mysqli_fetch_assoc($resultado)) {
+        ?>
+            <div class="dato "><?php  echo $row["id"];?></div>
+            <div class="dato"><?php  echo $row["titulo"];?></div>
+            <div class="dato"><?php  echo $row["autor"];?></div>
+            <div class="dato"><?php  echo $row["descripcion"];?></div>
+            <div class="dato">
+                <button type="button" class="lib_a2" onclick="mostrarModal(<?php echo $row["id"]; ?>)">Eliminar</button>
             </div>
-            <script src="js/alert_elim_lib1.js">
-            </script>    
+        <?php } ?> 
+    </div>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <p>¿Estás seguro de eliminar este libro?</p>
+            <button onclick="eliminarLibro()">Sí</button>
+            <button onclick="cerrarModal()">No</button>
+        </div>
+    </div>
+    
+    <script src="js/alert_elim_lib1.js"></script>    
 </body>
 </html>
