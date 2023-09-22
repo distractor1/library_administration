@@ -25,11 +25,12 @@
         }
         /*estilo de la imagen hessen icono*/
         .icono{
-            width: 100px;
-            height: 130px;
-            margin-left: 12px;
-            margin-top: -90px; /*cambiar valor para ajustar la pocicion*/
-            float: left;
+            position: absolute;
+            top: 0;
+            right: 100;
+            max-width: 100%;
+            width: 6rem; /* Tamaño deseado */
+            height: auto; /* Tamaño deseado */
         }
 
          /* Estilo para la clase "lib_a2" */
@@ -56,7 +57,7 @@
             background-color: hsl(209, 93%, 53%); /* Cambia el color de fondo de los títulos de columna */
         }
 
-        </style>
+    </style>
 </head>
 <body>
     <a href="inic.php">

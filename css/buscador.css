@@ -1,12 +1,12 @@
-
 /*diseño del buscador en general*/
-.buscad{
+.buscad {
     position: absolute;
-    left: 48%;
+    left: 50%;
     top: 6%;
-    transform: translate(-50%,-50%);
+    transform: translateX(-50%);
     padding: 10px;
 }
+
 input {
     outline: none;
     box-sizing: border-box;
@@ -20,36 +20,51 @@ input {
     transition: all .7s ease;
 }
 
-::placeholder{
+::placeholder {
     color: grey;
 }
-.btn{
+
+.btn {
     position: absolute;
     right: 0;
     top: 0;
     width: 70px;
     height: 70px;
     background: hsl(209, 93%, 53%);
-    line-height: 10px;
+    line-height: 70px;
     border-radius: 50%;
     text-align: center;
     cursor: pointer;
     transition: .5s;
 }
-.btn i{
-    font-size:  25px;
+
+.btn i {
+    font-size: 25px;
     color: white;
     line-height: 70px;
     transition: all .7 ease;
 }
 
-.buscad:hover input{
-    width: 500px;
+.buscad:hover input {
+    width: 100%; /* Cambiado para ajustarse al ancho de la pantalla */
 }
 
-.buscad:hover i{
+.buscad:hover i {
     transform: rotate(-360deg);
 }
-.btn:hover{
+
+.btn:hover {
     background: #8ac0ce;
+}
+
+@media (max-width: 768px) {
+    .buscad {
+        left: 50%;
+        top: 10%;
+        transform: translateX(-50%);
+    }
+
+    input {
+        width: 100%; /* Ajustado para ocupar todo el ancho disponible */
+    }
 }

@@ -13,7 +13,6 @@
             background: url(img/fond.jpg);
             font-size: 16px; /* Tamaño de fuente predeterminado */
         }
-        /* estilo d ela modal (ventana de advertencia)*/
     </style>
     <script>
         // JavaScript para redirigir al botón Atrás
