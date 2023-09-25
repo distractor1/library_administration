@@ -21,7 +21,11 @@
 
         }
         body{
+            font-family: monospace;
             background: url(img/fond.jpg);
+            background-size: cover; /* La imagen se ajustará al tamaño de la ventana */
+            background-repeat: no-repeat; /* Evita la repetición de la imagen */
+            background-attachment: fixed; /* Evita que la imagen se desplace con el scroll */
         }
         /*estilo de la imagen hessen icono*/
         .icono{

@@ -5,12 +5,7 @@
     box-sizing: border-box;
 }
 /* diseño de la estructura*/
-body {
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background-size: cover;
-}
+
 /* diseño del menu genral*/
 .menu li a {
     text-decoration: none;
