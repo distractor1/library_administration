@@ -49,3 +49,13 @@
     text-align: center;
     border-radius: 5px;
 }
+.oculto{
+    background-color: hsl(209, 93%, 53%);
+    color: white;
+    padding: 10px 20px;
+    border: #fff;
+    cursor: pointer;
+}
+.oculto:hover {
+    border: 2px solid white; /* Cambia el borde a blanco al pasar el mouse */
+}

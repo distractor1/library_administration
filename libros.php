@@ -11,7 +11,6 @@
          .restablecimiento {
             margin-top: 10px;
             padding: 5px 10px;
-            background-color: #f0f0f0;
             border-radius: 5px;
             text-decoration: none;
             display: inline-block;
@@ -78,7 +77,7 @@
     </div>
     
     <?php if (isset($_GET['search1'])) { ?>
-        <a class="restablecimiento" href="?"><button>Mostrar todos</button></a>
+        <a class="restablecimiento" href="?"><button class="oculto">Mostrar todos</button></a>
     <?php } ?>
 
     <?php
