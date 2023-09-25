@@ -7,15 +7,17 @@ body {
 
 h1 {
     text-align: center;
-    margin-top: 20px;
+    margin-top: 70px;
+    font-family: American;
 }
 
 form {
     max-width: 500px;
     margin: 0 auto;
+    margin-top: 50PX;
     padding: 45px;
     border-radius: 5px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
 
 label {
@@ -84,11 +86,12 @@ button[type="submit"]:hover {
 }
 /*estilo de la imagen hessen icono*/
 .icono{
-    width: 100px;
-    height: 130px;
-    margin-left: 20px;
-    margin-top: 0px; /*cambiar valor para ajustar la pocicion*/
-    float: left;
+    position: absolute;
+    top: 0;
+    right: 100;
+    max-width: 100%;
+    width: 6rem; /* Tamaño deseado */
+    height: auto; /* Tamaño deseado */
 }
 /* diseño de select */
 select#descripcion {

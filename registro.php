@@ -17,14 +17,14 @@
         <img class="icono" src="img/hessen icono.png">
     </a>
     <!-- Estructura de la página -->
-    <h1>Registro Nuevo Libro</h1>
+    <h1>REGISTRO NUEVO LIBRO</h1>
     <form action="db.php" method="post">
         <label for="titulo">Título del Libro:</label>
         <input type="text" id="titulo" name="titulo" required>
 
         <label for="autor">Autor:</label>
         <input type="text" id="autor" name="autor" required>
-        <label for="descripcion">Descripción:</label>
+        <label for="descripcion">Seccion:</label>
         <select id="descripcion" name="descripcion" required>
         <option value="opcion1">Gabinete 1</option>
         <option value="opcion2">Gabinete 2</option>

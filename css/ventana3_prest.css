@@ -70,11 +70,12 @@
         margin-bottom: 10px;
     }
     .icono{
-        width: 100px;
-        height: 130px;
-        margin-left: 20px;
-        margin-top: 0px; /*cambiar valor para ajustar la pocicion*/
-        float: left;
+        position: absolute;
+        top: 0;
+        right: 100;
+        max-width: 100%;
+        width: 6rem; /* Tamaño deseado */
+        height: auto; /* Tamaño deseado */
     }
     /* diseño de select */
     select#descripcion {
