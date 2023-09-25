@@ -1,3 +1,4 @@
+
 .login-container p {
     position: absolute;
     bottom: 0;
@@ -9,32 +10,33 @@
     text-align: center; 
     font-style: italic;
     font-size: 10px;
-    color: white;
+    color: black;
 }
 /* estilo del conainer login*/
 .login-container {
     background-color: rgba(87, 112, 150, 0.3);
     padding: 40px;
     border-radius: 10px;
-    box-shadow: 0px 0px 10px rgb(255, 255, 255);
+    box-shadow: 0px 0px 10px rgb(9, 73, 170);
     text-align: center;
     max-width: 400px;
     border: 2px solid transparent;
     transition: border-color 0.3s ease-in-out;
     }
 .login-container:hover {
-        border: 2px solid #ffffff; /* Cambia el borde a blanco al pasar el mouse */
+        border: 2px solid rgb(9, 73, 170); /* Cambia el borde a blanco al pasar el mouse */
     }
 
 h1 {
     margin-bottom: 20px;
-    color: #fffefe;
+    color: black;
+    font-family: American;
 }
 
 label {
     display: block;
     margin-bottom: 5px;
-    color: #fffcfc;
+    color: black;
     font-weight: bold;
 }
 
@@ -48,7 +50,7 @@ input[type="password"] {
 }
 
 input[type="submit"] {
-    background-color: #333;
+    background-color:rgb(9, 73, 170);
     color: #fff;
     border: none;
     padding: 10px 20px;
@@ -56,9 +58,6 @@ input[type="submit"] {
     cursor: pointer;
 }
 
-input[type="submit"]:hover {
-    background-color: #444;
-}
 /* estilo a la imagen icono de login*/
 .login-container img {
     width: 90px; /* Ajusta el ancho de la imagen según tus necesidades */
