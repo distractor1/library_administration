@@ -1,6 +1,3 @@
-body {
-    font-family: monospace;
-}
 
 .tabla_general {
     width: 100%;
@@ -78,8 +75,7 @@ top: 20px;
     justify-content: center;
     align-items: center;
     border: 1px solid #000000; /* Agrega bordes a las celdas */
-    padding: 10px; /* Añade un poco de espacio dentro de las celdas */
-    text-align: center;
+    padding: 4px; /* Añade un poco de espacio dentro de las celdas */
 }
 
 .subtitulos {

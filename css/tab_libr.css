@@ -18,7 +18,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10px; /* Aumentado el espacio interno para mejorar la legibilidad en pantallas pequeñas */
+    padding: 4px; /* Aumentado el espacio interno para mejorar la legibilidad en pantallas pequeñas */
     text-align: center; /* Alineación de texto centrada */
 }
 

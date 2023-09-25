@@ -11,7 +11,6 @@
        
         body{
             background: url(img/fond.jpg);
-            font-size: 16px; /* Tamaño de fuente predeterminado */
         }
     </style>
     <script>
