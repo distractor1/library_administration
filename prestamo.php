@@ -86,8 +86,8 @@
     <div id="myModal" class="modal">
         <div class="modal-content">
             <p>¿Estás seguro de eliminar este libro?</p>
-            <button onclick="eliminarLibro1()">Sí</button>
-            <button onclick="cerrarModal1()">No</button>
+            <button onclick="eliminarLibro1()" class="yes">Sí</button>
+            <button onclick="cerrarModal1()" class="nou">No</button>
         </div>
     </div>
     <script src="js/aler_prest-elim.js">

@@ -34,11 +34,31 @@ top: 20px;
 
 .modal-content {
     background-color: #fff;
-    width: 300px;
-    margin: 100px auto;
+    width: 250px;
+    margin: 300px auto;
     padding: 20px;
     text-align: center;
     border-radius: 5px;
+    font-size: 18px;
+}
+.yes{
+    background-color: red;
+    width: 60px;
+    padding: 8px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    color: white;
+}
+.nou{
+    background-color:rgb(15, 153, 15);
+    width: 60px;
+    margin: 20px;
+    padding: 8px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    color: white;
 }
 /*estilo de la imagen hessen icono*/
 .icono{

@@ -115,8 +115,8 @@
     <div id="myModal" class="modal">
         <div class="modal-content">
             <p>¿Estás seguro de eliminar este libro?</p>
-            <button onclick="eliminarLibro()">Sí</button>
-            <button onclick="cerrarModal()">No</button>
+            <button onclick="eliminarLibro()" class="yes">Sí</button>
+            <button onclick="cerrarModal()"class="nou">No</button>
         </div>
     </div>
     

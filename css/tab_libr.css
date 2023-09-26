@@ -42,12 +42,32 @@
 
 .modal-content {
     background-color: #fff;
-    width: 80%; /* Cambiado a un porcentaje para hacerlo más adaptable */
+    width: 250px; /* Cambiado a un porcentaje para hacerlo más adaptable */
     max-width: 400px; /* Limitado el ancho máximo para evitar que sea demasiado grande en pantallas grandes */
-    margin: 20% auto; /* Aumentado el margen para centrarlo verticalmente en pantallas pequeñas */
+    margin: 300px auto; /* Aumentado el margen para centrarlo verticalmente en pantallas pequeñas */
     padding: 20px;
     text-align: center;
     border-radius: 5px;
+}
+
+.yes{
+    background-color: red;
+    width: 60px;
+    padding: 8px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    color: white;
+}
+.nou{
+    background-color:rgb(15, 153, 15);
+    width: 60px;
+    margin: 20px;
+    padding: 8px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    color: white;
 }
 .oculto{
     background-color: hsl(209, 93%, 53%);
