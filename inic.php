@@ -12,10 +12,13 @@
             align-items: center;
             min-height: 100vh;
             background-size: cover;
-            background: url(img/prub.jpg);
+            background: url(img/inic1.jpeg);
             background-size: cover; /* La imagen se ajustará al tamaño de la ventana */
             background-repeat: no-repeat; /* Evita la repetición de la imagen */
             background-attachment: fixed; /* Evita que la imagen se desplace con el scroll */
+        }
+        .menu{
+            background-color: rgb(9, 73, 170,0.3);
         }
 
         /* Estilo para los botones */
