@@ -21,7 +21,7 @@
 }
 
 .menu li a:hover {
-    background: rgb(9, 73, 170);
+    background: rgba(235, 106, 106, 0.925);
 }
 /*dieño de la anamcion de apertura*/
 .p10 {
@@ -111,7 +111,7 @@ color: white;
     width: 150px; /* Ancho deseado */
     height: 50px; /* Altura deseada */
     font-size: 18px; /* Tamaño del texto */
-    background-color:#f44336;
+    background-color:rgba(148, 30, 30, 0.925);
     color: white;
     border: 2px solid transparent; /* Establece un borde inicialmente transparente */
     transition: border-color 0.3s ease; /* Agrega una transición de animación a la propiedad border-color */
