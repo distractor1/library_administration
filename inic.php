@@ -40,14 +40,14 @@
     <!--imagenes de uso para la pagina-->   
     <center style="margin-top: 100px;">
         <br><br><br><br><br></brz><div class="p10">
-            <span style="--i:1;"><img src="img/a2.jpeg" alt=""></span>
-            <span style="--i:2;"><img src="img/anatomia.jpeg" alt=""></span>
-            <span style="--i:3;"><img src="img/cancer.jpeg" alt=""></span>
-            <span style="--i:4;"><img src="img/clinica.jpeg" alt=""></span>
-            <span style="--i:5;"><img src="img/conductas.jpeg" alt=""></span>
-            <span style="--i:6;"><img src="img/HARRISON-MEDICINA-INTERNA.jpg" alt=""></span>
-            <span style="--i:7;"><img src="img/psico.jpeg" alt=""></span>
-            <span style="--i:8;"><img src="img/estetica.jpg" alt=""></span>
+            <span style="--i:1;"><img src="img/primero.png" alt=""></span>
+            <span style="--i:2;"><img src="img/segundo.jpeg" alt=""></span>
+            <span style="--i:3;"><img src="img/tercero.png" alt=""></span>
+            <span style="--i:4;"><img src="img/cuarto.png" alt=""></span>
+            <span style="--i:5;"><img src="img/quinto.png" alt=""></span>
+            <span style="--i:6;"><img src="img/sexto.png" alt=""></span>
+            <span style="--i:7;"><img src="img/septimo.png" alt=""></span>
+            <span style="--i:8;"><img src="img/octavo.png" alt=""></span>
         </div>
     </center>
     <button id="salirBtn" class="salimos">Salir</button>
