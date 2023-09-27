@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>biblioteca</title>
+    <title>Biblioteca</title>
+    <link rel="icon" href="img/hessen icono.png" type="image/x-icon">
     <link rel="stylesheet" href="css/princpl.css">
 
     <style>

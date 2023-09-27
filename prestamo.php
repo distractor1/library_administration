@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LIBRO</title>
+    <title>Prestamo</title>
+    <link rel="icon" href="img/hessen icono.png" type="image/x-icon">
     <link rel="stylesheet" href="css/buscador.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
     <link rel="stylesheet" href="css/tabla.css">
