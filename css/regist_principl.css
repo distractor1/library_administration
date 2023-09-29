@@ -3,6 +3,7 @@ h1 {
     text-align: center;
     margin-top: 70px;
     font-family: American;
+    font-size: 25px;
 }
 
 form {
@@ -91,4 +92,9 @@ button[type="submit"]:hover {
 select#descripcion {
     width: 200px; /* Ajusta el ancho según tus preferencias */
     height: 37px;
+}
+@media (max-width: 768px) {
+    .icono {
+        width: 4rem; /* Tamaño más pequeño para pantallas pequeñas */
+    }
 }

@@ -21,7 +21,7 @@
         <img class="icono" src="img/hessen icono.png">
     </a>
     <!-- Estructura de la página -->
-    <h1>REGISTRO NUEVO LIBRO</h1>
+    <h1> NUEVO LIBRO</h1>
     <form action="db.php" method="post">
         <label for="titulo">Título del Libro:</label>
         <input type="text" id="titulo" name="titulo" required>

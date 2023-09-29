@@ -124,24 +124,34 @@ color: white;
 @media (max-width: 768px) {
     .menu {
         text-align: left;
-        width: 100%; /* Hacer que el menú ocupe todo el ancho disponible */
+        width: 100%;
     }
 
     .menu li {
         display: block;
-        text-align: left; /* Alinear el texto a la izquierda */
+        text-align: left;
     }
 
     .menu li a {
         padding: 10px;
-        font-size: 16px; /* Reducir el tamaño del texto */
+        font-size: 16px;
     }
+
     .salimos {
         position: fixed;
-        bottom: 20px; /* Ajusta la distancia desde la parte inferior */
-        right: 20px; /* Ajusta la distancia desde el lado derecho */
-        width: 150px; /* Ancho deseado */
-        height: 50px; /* Altura deseada */
-        font-size: 18px; /* Tamaño del texto */
+        bottom: 20px;
+        right: 20px; /* Cambia "right" a "left" para pegar al lado izquierdo */
+        width: 150px;
+        height: 50px;
+        font-size: 18px;
+    }
+
+    .icono {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 4rem;
+        height: 8rem;
+        left: auto; /* Ajusta el lado derecho a "auto" para que esté en el lado izquierdo */
     }
 }

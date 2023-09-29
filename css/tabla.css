@@ -107,3 +107,8 @@ top: 20px;
 .informacion {
     font-size: 13px; /* Tamaño de fuente base para datos */
 }
+@media (max-width: 768px) {
+    .icono {
+        width: 4rem; /* Tamaño más pequeño para pantallas pequeñas */
+    }
+}

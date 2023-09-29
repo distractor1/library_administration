@@ -14,6 +14,11 @@
             background-repeat: no-repeat; /* Evita la repetición de la imagen */
             background-attachment: fixed; /* Evita que la imagen se desplace con el scroll */
         }
+        @media (max-width: 768px) {
+        .icono {
+            width: 4rem; /* Tamaño más pequeño para pantallas pequeñas */
+        }
+    }
     </style>
 </head>
 <body>

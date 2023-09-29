@@ -36,6 +36,11 @@
             width: 6rem; /* Tamaño deseado */
             height: auto; /* Tamaño deseado */
         }
+        @media (max-width: 768px) {
+            .icono {
+                width: 4rem; /* Tamaño más pequeño para pantallas pequeñas */
+            }
+        }
 
          /* Estilo para la clase "lib_a2" */
         .lib_a2 {
