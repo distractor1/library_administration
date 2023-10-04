@@ -147,11 +147,11 @@ color: white;
     }
 
     .icono {
-        position: fixed;
+        position: absolute;
         top: 0;
-        left: 0;
-        width: 4rem;
-        height: 8rem;
-        left: auto; /* Ajusta el lado derecho a "auto" para que esté en el lado izquierdo */
+        right: 100;
+        max-width: 100%;
+        width: 6rem; /* Tamaño deseado */
+        height: auto; /* Tamaño deseado */
     }
 }

@@ -77,7 +77,7 @@
         <form method="GET" action="">
             <input type="text" name="search1" placeholder="Buscar">
             <div class="btn">
-                <i class="fa fa-search"></i>
+                <button type="submit" class="fa fa-search"></button>
             </div>
         </form>
     </div>

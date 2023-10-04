@@ -36,12 +36,12 @@
         <form method="GET" action="">
             <input type="text" name="search" placeholder="buscar">
             <div class="btn">
-                <i class="fa fa-search"></i>
+                <button type="submit" class="fa fa-search"></button>
             </div>
         </form>
     </div>
        <?php if (isset($_GET['search'])) { ?>
-        <a class="mostrar-todos" href="?"><button>Mostrar todos</button></a>
+        <a class="mostrar-todos" href="?"><button class="oculto">Mostrar todos</button></a>
         <?php } ?>
 
     <?php

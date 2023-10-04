@@ -52,11 +52,7 @@
     </center>
     <button id="salirBtn" class="salimos">Salir</button>
     <script>
-        // Bloquear el retroceso del navegador
-        history.pushState(null, null, location.href);
-        window.onpopstate = function () {
-            history.go(1);
-        };
+       
 
         // Agregar un evento click al botón "Salir" para permitir la salida
         document.getElementById("salirBtn").addEventListener("click", function () {
